@@ -20,8 +20,7 @@ def main():
                 choice = input(
                     "Is this your equation : {}x**2 + {}x + {} = 0 \n".format(a, b, c)
                 )
-                match choice:
-                    case "yes":
+                if choice == "yes":
                         discriminant = (b**2) - (4 * a * c)
                         if discriminant > 0 and b == 0 and c < 0:
                             x = math.sqrt(-1 * (c / a))
@@ -52,11 +51,11 @@ def main():
                                 " not in the set of integers."
                             )
 
-                    case "no":
+                elif choice == "no":
                         print("Please enter a new equation then.")
 
-                    case _:
-                        print("Again, please respond with either yes or no")
+                else:
+                    print("Again, please respond with either yes or no")
 
             except ValueError:
                 print(
