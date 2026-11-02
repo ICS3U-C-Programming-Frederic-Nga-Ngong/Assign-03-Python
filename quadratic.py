@@ -22,8 +22,8 @@ def main():
                 )
                 match choice:
                     case "yes":
-                        Discriminant = (b**2) - (4 * a * c)
-                        if Discriminant > 0 and b == 0 and c < 0:
+                        discriminant = (b**2) - (4 * a * c)
+                        if discriminant > 0 and b == 0 and c < 0:
                             x = math.sqrt(-1 * (c / a))
                             print(
                                 "The answers to your equation are -{} and +{}".format(
@@ -31,16 +31,16 @@ def main():
                                 )
                             )
 
-                        elif Discriminant > 0:
-                            x = (-b + math.sqrt(Discriminant)) / (2 * a)
-                            y = (-b - math.sqrt(Discriminant)) / (2 * a)
+                        elif discriminant > 0:
+                            x = (-b + math.sqrt(discriminant)) / (2 * a)
+                            y = (-b - math.sqrt(discriminant)) / (2 * a)
                             print(
                                 "the answers to your equation are {} and {}".format(
                                     x, y
                                 )
                             )
 
-                        elif Discriminant == 0:
+                        elif discriminant == 0:
                             x = -b / (2 * a)
                             print("The only answer to your equation is {}".format(x))
 
