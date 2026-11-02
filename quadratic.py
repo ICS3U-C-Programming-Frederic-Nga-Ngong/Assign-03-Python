@@ -25,9 +25,10 @@ def main():
                         discriminant = (b**2) - (4 * a * c)
                         if discriminant > 0 and b == 0 and c < 0:
                             x = math.sqrt(-1 * (c / a))
+                            y = math.sqrt(-1 * (c / a))
                             print(
                                 "The answers to your equation are -{} and +{}".format(
-                                    x, x
+                                    x, y
                                 )
                             )
 
@@ -46,7 +47,9 @@ def main():
 
                         else:
                             print(
-                                "Sorry, your equation has no real root according to math since square root of negative number is not in the set of integers."
+                                "Sorry, your equation has no real root according to math"
+                                " since square root of negative number is"
+                                " not in the set of integers."
                             )
 
                     case "no":
