@@ -34,7 +34,7 @@ def main():
                     if choice == "yes":
 
                         # Calculates discriminant
-                        discriminant = (b**2) - (4 * a * c)
+                        discriminant = (b ** 2) - (4 * a * c)
 
                         # Checks various conditions including the discriminant
                         if discriminant > 0 and b == 0 and c < 0:
