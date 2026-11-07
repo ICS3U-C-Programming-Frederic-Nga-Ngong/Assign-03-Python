@@ -8,6 +8,9 @@ import math
 
 def main():
 
+    print(
+        "Hi Mr user.How are you doing ? /n This code is used to solve quadratic equation"
+    )
     # Get a,b and c.
     a_str = input("Enter the value of a : ")
     b_str = input("Enter the value of b : ")
@@ -30,7 +33,7 @@ def main():
             if choice == "yes":
 
                 # Calculates discriminant
-                discriminant = (b ** 2) - (4 * a * c)
+                discriminant = (b**2) - (4 * a * c)
 
                 # Checks various conditions including the discriminant
                 if discriminant > 0 and b == 0 and c < 0:
